@@ -9,7 +9,12 @@
 <body>
 
   <%= render 'layouts/messages'%>
+  <%= render 'layouts/navigation'%> <!--Leads to _navigation.html.erb-->
+  <div class = "container">
+  
   <%= yield %>
-
+  
+  <%= render 'layouts/footer' %>
+  </div>
 </body>
 </html>
